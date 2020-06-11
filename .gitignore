@@ -1,1 +1,3 @@
-.netrwhist
+# ignore packages
+pack/minpac/start
+
