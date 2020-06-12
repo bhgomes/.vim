@@ -10,5 +10,10 @@ alias vim="vim $DEFAULT_VIM_ARGS"
 
 # NVIM
 alias nv="nvim"
+
+# DEFAULT VIM
 alias v="nvim"
+
+# MAGIT
+alias magit="v -c MagitOnly"
 
