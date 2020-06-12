@@ -114,6 +114,9 @@ Pack 'tpope/vim-fugitive'
 Pack 'airblade/vim-gitgutter'
 Pack 'jreybert/vimagit'
 
+" COMPLETION
+Pack 'neoclide/coc.nvim', {'branch': 'release'}
+
 " LANGUAGE
 Pack 'sheerun/vim-polyglot'
 Pack 'rust-lang/rust.vim'
