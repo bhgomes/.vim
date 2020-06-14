@@ -81,6 +81,12 @@ if empty(mapcheck('<C-W>', 'i'))
 endif
 
 
+" GLOBAL COPY-PASTE
+" think about: vnoremap <C-c> "*y :let @+=@*<CR>
+vnoremap <C-c> "+y
+map <C-p> "+P
+
+
 " PLUGIN-INDENT
 if has('autocmd')
   filetype plugin indent on
