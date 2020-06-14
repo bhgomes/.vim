@@ -5,20 +5,29 @@
 set autoindent
 set autoread
 set expandtab
+set hidden
+set hlsearch
 set incsearch
+set ignorecase
+set lazyredraw
 set linebreak
+set magic
 set nolist
 set noshowmode
 set number
 set relativenumber
 set ruler
+set showmatch
+set smartcase
 set smarttab
 set termguicolors
 set wildmenu
 set wrap
 set backspace      =indent,eol,start
+set cmdheight      =1
 set complete      -=i
 set display       +=lastline
+set encoding       =utf8
 set history        =1000
 set laststatus     =2
 set nrformats     -=octal
@@ -28,6 +37,7 @@ set sidescrolloff  =5
 set softtabstop    =0
 set tabpagemax     =50
 set tabstop        =4
+set updatetime     =300
 
 
 " SESSION/VIEW OPTIONS
@@ -72,6 +82,16 @@ if v:version > 703 || v:version == 703 && has("patch541")
 endif
 
 
+" LEADER <space>
+let mapleader = " "
+
+
+" FAST SAVE-EXIT
+nmap <leader>w :w!<cr>
+nmap <leader>q :q<cr>
+nmap <leader>x :x<cr>
+
+
 " KEYBIND
 if empty(mapcheck('<C-U>', 'i'))
   inoremap <C-U> <C-G>u<C-U>
@@ -81,13 +101,27 @@ if empty(mapcheck('<C-W>', 'i'))
 endif
 
 
+" EMACS FRONT-BACK
+nmap <C-a> I
+imap <C-a> <ESC>I
+nmap <C-e> A
+imap <C-e> <ESC>A
+
+
 " GLOBAL COPY-PASTE
-" think about: vnoremap <C-c> "*y :let @+=@*<CR>
+" TODO vnoremap <C-c> "*y :let @+=@*<CR>
 vnoremap <C-c> "+y
 map <C-p> "+P
 
 
-" PLUGIN-INDENT
+" WINDOWS
+map <C-h> <C-W>h
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-l> <C-W>l
+
+
+" FILETYPE PLUGIN-INDENT
 if has('autocmd')
   filetype plugin indent on
 endif
@@ -148,8 +182,15 @@ Pack 'itchyny/lightline.vim'
 " MARKDOWN
 Pack 'mmai/vim-markdown-wiki'
 
-" OTHER
+" EDITORCONFIG
 Pack 'editorconfig/editorconfig-vim'
+
+" NERDTREE
+Pack 'preservim/nerdtree'
+
+" ZEN
+Pack 'junegunn/goyo.vim'
+Pack 'amix/vim-zenroom2'
 
 call plugpac#end() " ---------------------------------------------------------
 
@@ -173,6 +214,9 @@ let g:lightline = {
       \ },
       \ }
 
+
+" SETUP goyo
+nnoremap <silent> <leader>z :Goyo<cr>
 
 " AUTOCMD
 autocmd vimenter * colorscheme base16-black-metal

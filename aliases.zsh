@@ -14,6 +14,9 @@ alias nv="nvim"
 # DEFAULT VIM
 alias v="nvim"
 
+# CONFIG
+alias vimrc="$EDITOR $VIMCONFIG/vimrc"
+
 # MAGIT
 alias magit="v -c MagitOnly"
 
