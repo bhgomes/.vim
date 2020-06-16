@@ -84,6 +84,11 @@ if v:version > 703 || v:version == 703 && has("patch541")
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" SAVE CURSOR
+
+au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " KEY-BINDINGS
 
 " LEADER <space>
