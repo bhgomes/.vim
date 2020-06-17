@@ -157,9 +157,15 @@ let g:netrw_dirhistmax = 0
 call plugpac#begin() " --------------------------------------------------------
 
 " BASICS
+Pack 'tpope/vim-repeat'
 Pack 'tpope/vim-surround'
 Pack 'tpope/vim-commentary'
 Pack 'tpope/vim-scriptease'
+Pack 'tpope/vim-unimpaired'
+Pack 'godlygeek/tabular'
+Pack 'terryma/vim-multiple-cursors'
+Pack 'justinmk/vim-sneak'
+Pack 'easymotion/vim-easymotion'
 
 " TERM 
 Pack 'wincent/terminus'
@@ -169,10 +175,9 @@ Pack 'tpope/vim-fugitive'
 Pack 'airblade/vim-gitgutter'
 Pack 'jreybert/vimagit'
 
-" COMPLETION
-Pack 'neoclide/coc.nvim', {'branch': 'release'}
-
 " LANGUAGE
+Pack 'neoclide/coc.nvim', {'branch': 'release'}
+Pack 'w0rp/ale'
 Pack 'sheerun/vim-polyglot'
 Pack 'rust-lang/rust.vim'
 
@@ -180,12 +185,8 @@ Pack 'rust-lang/rust.vim'
 Pack 'junegunn/fzf'
 
 " COLORSCHEME 
-Pack 'Roy-Orbison/nord-vim-256'
+Pack 'flazz/vim-colorschemes'
 Pack 'chriskempson/base16-vim'
-Pack 'jnurmine/Zenburn'
-Pack 'smallwat3r/vim-efficient'
-Pack 'smallwat3r/vim-simplicity'
-Pack 'zefei/simple-dark'
 
 " LIGHTLINE
 Pack 'itchyny/lightline.vim'
