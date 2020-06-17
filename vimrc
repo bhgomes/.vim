@@ -94,6 +94,16 @@ autocmd BufReadPost *
 autocmd BufReadPost * silent! normal! g`"zv
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" PERSISTENT UNDO
+" FIXME
+" if has('persistent_undo')
+"     let undodirpath =$SHARE/vim/undodir
+"     call system('mkdir -p' . undodirpath)
+"     let &undodir = undodirpath
+"     set undofile
+" endif
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " KEY-BINDINGS
 
 " LEADER <space>
