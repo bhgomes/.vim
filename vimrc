@@ -190,6 +190,7 @@ Pack 'neoclide/coc.nvim', {'branch': 'release'}
 Pack 'w0rp/ale'
 Pack 'sheerun/vim-polyglot'
 Pack 'rust-lang/rust.vim'
+Pack 'kdheepak/JuliaFormatter.vim'
 
 " FZF 
 Pack 'junegunn/fzf'
@@ -232,17 +233,17 @@ endif
 " SETUP lightline
 
 let g:lightline = {
-      \ 'colorscheme': 'powerline',
-      \ 'active': {
-      \   'left':  [ [ 'mode',      'paste'                            ],
-      \              [ 'gitbranch', 'readonly', 'filename', 'modified' ], ],
-      \   'right': [ [ 'lineinfo'                                      ],
-      \              [ 'percent'                                       ], ],
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'FugitiveHead',
-      \ },
-      \ }
+    \ 'colorscheme': 'powerline',
+    \ 'active': {
+    \   'left':  [ [ 'mode',      'paste'                            ],
+    \              [ 'gitbranch', 'readonly', 'filename', 'modified' ], ],
+    \   'right': [ [ 'lineinfo'                                      ],
+    \              [ 'percent'                                       ], ],
+    \ },
+    \ 'component_function': {
+    \   'gitbranch': 'FugitiveHead',
+    \ },
+    \ }
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SETUP FZF
@@ -272,6 +273,17 @@ let NERDTreeShowHidden = 1
 let g:NERDTreeWinSize  = 35
 
 map <leader>nt :NERDTreeToggle<cr>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" SETUP JuliaFormatter
+
+let g:JuliaFormatter_options = {
+    \ 'indent'                    : 4,
+    \ 'margin'                    : 92,
+    \ 'always_for_in'             : v:false,
+    \ 'whitespace_typedefs'       : v:false,
+    \ 'whitespace_ops_in_indices' : v:true,
+    \ }
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SETUP lf
