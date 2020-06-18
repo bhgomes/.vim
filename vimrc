@@ -156,6 +156,11 @@ if has('syntax') && !exists('g:syntax_on')
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" REMOVE GUI CURSOR
+
+autocmd OptionSet guicursor noautocmd set guicursor=
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NETRW
 
 let g:netrw_dirhistmax = 0
@@ -313,7 +318,7 @@ let g:JuliaFormatter_options = {
 " nnoremap <leader>lf :LF<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" VIM ENTER
+" SET COLORSCHEME
 
 autocmd vimenter * colorscheme base16-black-metal
 
