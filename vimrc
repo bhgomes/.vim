@@ -207,7 +207,8 @@ Pack 'chriskempson/base16-vim'
 " LIGHTLINE
 Pack 'itchyny/lightline.vim'
 
-" ORGANIZATION :disabled:
+" ORGANIZATION
+Pack 'itchyny/calendar.vim'
 " Pack 'dhruvasagar/vim-dotoo'
 " Pack 'jceb/vim-orgmode'
 
