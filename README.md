@@ -3,9 +3,19 @@ _modal is better_
 
 ## Installation
 
+### Packages
+
+Run `git submodule init` and `git submodule update --recursive` to download `minpac`. Then, open `vim` and run `:PackInstall` to download all the plugins.
+
+```sh
+git submodule init
+git submodule update --recursive
+vim -c PackInstall
+```
+
 ### With Neovim
 
-Place the following in the `$HOME/.config/nvim/init.vim` configuration:
+Place the following in your `$HOME/.config/nvim/init.vim` configuration:
 
 ```vim
 set runtimepath^=$VIMCONFIG
@@ -16,13 +26,4 @@ let &packpath = &runtimepath
 source $VIMRC
 ```
 
-### Packages
-
-Run `git submodule init` and `git submodule update --recursive` to download `minpac`. Then, open `vim` and run `:PlugInstall` to download all the plugins.
-
-```sh
-git submodule init
-git submodule update --recursive
-vim -c PackInstall
-```
-
+where `$VIMCONFIG` is the location of this repository and `$VIMRC` is `$VIMCONFIG/vimrc`.
