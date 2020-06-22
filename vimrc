@@ -14,6 +14,7 @@ set ignorecase
 set lazyredraw
 set linebreak
 set magic
+set nocompatible
 set nolist
 set noshowmode
 set number
@@ -207,10 +208,11 @@ Pack 'chriskempson/base16-vim'
 " LIGHTLINE
 Pack 'itchyny/lightline.vim'
 
-" ORGANIZATION
-Pack 'itchyny/calendar.vim'
+" ORGANIZATION :disabled:
+" Pack 'itchyny/calendar.vim'
 " Pack 'dhruvasagar/vim-dotoo'
-" Pack 'jceb/vim-orgmode'
+" Pack 'dhruvasagar/vim-table-mode'
+Pack 'jceb/vim-orgmode'
 
 " MARKDOWN
 Pack 'mmai/vim-markdown-wiki'
