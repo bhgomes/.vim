@@ -205,6 +205,9 @@ Pack 'junegunn/fzf'
 Pack 'flazz/vim-colorschemes'
 Pack 'chriskempson/base16-vim'
 
+" ICONS
+Pack 'ryanoasis/vim-devicons'
+
 " LIGHTLINE
 Pack 'itchyny/lightline.vim'
 
