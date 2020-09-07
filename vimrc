@@ -182,6 +182,7 @@ Pack 'godlygeek/tabular'
 Pack 'terryma/vim-multiple-cursors'
 Pack 'justinmk/vim-sneak'
 Pack 'easymotion/vim-easymotion'
+Pack 'chrisbra/unicode.vim'
 
 " TERM 
 Pack 'wincent/terminus'
@@ -215,7 +216,7 @@ Pack 'itchyny/lightline.vim'
 " Pack 'itchyny/calendar.vim'
 " Pack 'dhruvasagar/vim-dotoo'
 " Pack 'dhruvasagar/vim-table-mode'
-Pack 'jceb/vim-orgmode'
+" Pack 'jceb/vim-orgmode'
 
 " MARKDOWN
 Pack 'mmai/vim-markdown-wiki'
