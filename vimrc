@@ -231,6 +231,11 @@ Pack 'preservim/nerdtree'
 Pack 'junegunn/goyo.vim'
 Pack 'amix/vim-zenroom2'
 
+" OTHER
+Pack 'wellle/context.vim'
+Pack 'ryanoasis/vim-devicons'
+Pack 'rrethy/vim-hexokinase'
+
 call plugpac#end() " ----------------------------------------------------------
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
