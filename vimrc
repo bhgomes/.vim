@@ -193,8 +193,8 @@ Pack 'airblade/vim-gitgutter'
 Pack 'jreybert/vimagit'
 
 " LANGUAGE
-Pack 'neoclide/coc.nvim', {'branch': 'release'}
-Pack 'w0rp/ale'
+Pack 'neoclide/coc.nvim'
+Pack 'dense-analysis/ale'
 Pack 'sheerun/vim-polyglot'
 Pack 'rust-lang/rust.vim'
 Pack 'kdheepak/JuliaFormatter.vim'
@@ -232,7 +232,6 @@ Pack 'junegunn/goyo.vim'
 Pack 'amix/vim-zenroom2'
 
 " OTHER
-Pack 'wellle/context.vim'
 Pack 'ryanoasis/vim-devicons'
 Pack 'rrethy/vim-hexokinase'
 
@@ -272,6 +271,8 @@ let g:lightline = {
 
 nnoremap <silent> <leader>f :FZF<cr>
 
+" TODO set rtp+=/usr/local/opt/fzf
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SETUP ZEN
 
@@ -295,6 +296,13 @@ let NERDTreeShowHidden = 1
 let g:NERDTreeWinSize  = 35
 
 map <leader>nt :NERDTreeToggle<cr>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" SETUP Rust
+
+let g:rustfmt_autosave = 1
+
+command! CargoPlay !cargo play %
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SETUP JuliaFormatter
